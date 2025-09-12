@@ -1,0 +1,11 @@
+h1{font-size:80px;
+background-color: black;
+color:blue;}
+p{font-size:24px;}
+body{background-color:darkgoldenrod;font-family:Verdana, sans-serif;}
+
+h2{font-size:60px;}
+
+.text-bright{color: coral;}
+.bold {font-weight: 700;}
+ol{background-color: aqua;font-size:30px;color:brown;font-family: Georgia;font-weight:700;}
