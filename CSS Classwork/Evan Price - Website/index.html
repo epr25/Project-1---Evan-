@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interesting Information and Facts about Interesting Fish Species</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+  </style> 
+  <meta description ="A website about a 
+  very biased select few species of fish, 
+  with interesting information and facts 
+  about them">
+</head>  
+<body>
+  <!--Common header-->
+  <div id="header"></div>
+  
+  
+
+  <!--Page content-->
+  <main>
+    <h1><center>Interesting Species of Fish and Information About Them</h1>
+    <img src="images\titantriggerfish.webp">
+    <h2>Introduction</h2>
+    <p>Welcome to the site, We hope you enjoy your stay!  
+    <p>This page is the main navigation page, and dosen't contain as much information as other pages, though you are still free to look around.
+      
+    <h2> Navigation</h2>
+    <p>From here, you can navigate over to other pages either by the top menu, or by clicking one of the bottom panels that contain images of fish. </p>
+    <p>It is also reccomended to read the about page to learn more about the site itself.</p>
+    <p>If you are having issues with the site, you can contact me through the "Contact" page.</p>
+    <h2>Fish Information Links:</h2>
+
+<section class="flex-demo">
+
+<div class="card">
+<img src="images/goliathgrouperheaderimage.webp" width="100%">
+<h4>Goliath Grouper</h4>
+<p>The largest of the grouper species. And also critically endangered. click below to learn more!</p>
+<button>Placeholder link</button>
+</div>
+<div class="card">
+<img src="images/morayeelheaderimage.jpg" width="100%">
+<h4>Moray Eel</h4>
+<p>A species of eel often inhabiting reefs, and are very aggressive and intelligent. Click the link below to learn more!</p>
+<button>Placeholder link</button>
+</div>
+<div class="card">
+<img src="images/titantriggerfishheaderimage.jpg"  width="100%">
+<h4>Titan Triggerfish</h4>
+<p>The largest of the triggerfish species, and is very territorial, click the link below to learn more!</p>
+<button>More info</button>
+</div>
+<div class="card">
+<img src="images/baskingsharkheaderimage.jpg" width="100%">
+<h4>Basking Shark</h4>
+<p>One of the more unique looking shark species, and is completely harmless to people. Click the link below to learn more!</p>
+<button>More info</button>
+</div>
+<div class="card">
+<img src="images/goblinsharkheaderimage.avif" alt="photo of cameras" width="100%">
+<h4>Goblin Shark</h4>
+<p>One of the more creepy looking shark species, and also infamous for it's unique hunting style. Click the link below to learn more!</p>
+<button>More info</button>
+</div>
+</section>
+
+
+
+<!--Common footer-->
+<div id="footer"></div>
+
+<script>
+    async function loadHTML(id, file) {
+      const el = document.getElementById(id);
+      const resp = await fetch(file);
+      el.innerHTML = await resp.text();
+    }
+    loadHTML("header", "header.html");
+    loadHTML("footer", "footer.html");
+</script>
+        
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About The Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+  </style> 
+  <meta description ="A website about a 
+  very biased select few species of fish, 
+  with interesting information and facts 
+  about them">
+</head>  
+<body>
+  <!--Common header-->
+  <div id="header"></div>
+  <div class="goliath">
+  <div class="title">
+    <h1>Goliath Grouper</h1>
+  <p>Scientific Name: Epinephelus itajara</p>
+  </div>
+</div>
+  <!--Page content-->
+ 
+
+
+
+ 
+  <main>
+  
+    <h2>Introduction</h2>
+    <img src="images/goliathgrouperwithotherfish.avif">
+    <p>Imagine yourself scuba diving one day, and you come across a giant brownish yellow fish, likely longer than you.</p>
+    <p>Despite how big it may appear, the fish itself is quite harmless, and may even exhibit some curiosity towards you.</p>
+    <p>What you may have saw was a Goliath Grouper! Which is a large bony fish and the largest of the grouper species.</p>
+
+    <h2>Quick Facts</h2>
+    <li>Goliath Groupers can grow up to 8 feet and weigh up to 800 pounds</p></li>
+    <li>They can be found in coastal and nearshore waters that are located around manmade structures or muddy bottoms</li>
+    <li>They are opportunistic predators that mostly feed on slower bottom moving species, such as crabs</li>
+    <li>They are currently listed as a critically endangered species</li>
+    <h2>Sources</h2> 
+    <p>https://myfwc.com/wildlifehabitats/profiles/saltwater/grouper/goliath-grouper/</p>
+<!--Common footer-->
+
+<script>
+    async function loadHTML(id, file) {
+      const el = document.getElementById(id);
+      const resp = await fetch(file);
+      el.innerHTML = await resp.text();
+    }
+    loadHTML("header", "header.html");
+    loadHTML("footer", "footer.html");
+</script>
+        
+</body>
+</html>

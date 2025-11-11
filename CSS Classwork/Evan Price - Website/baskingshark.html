@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About The Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+  </style> 
+  <meta description ="A website about a 
+  very biased select few species of fish, 
+  with interesting information and facts 
+  about them">
+</head>  
+<body>
+  <!--Common header-->
+  <div id="header"></div>
+  <div class="baskingshark">
+  <div class="title">
+    <h1>Basking Shark</h1>
+  <p>Scientific Name: Cetorhinus maximus
+
+</p>
+  </div>
+</div>
+  <!--Page content-->
+ 
+
+
+
+ 
+  <main>
+  
+    <h2>Introduction</h2>
+    <img src="images/baskingsharkopenmouth.jpg">
+    <p>Picture yourself swimming above the deep ocean, when all of a sudden; you spot a giant shark fin. However, once you go underwater, there is a key feature that tells you everything is ok. A large extendable gaping mouth.</p>
+    <p>The animal is none other than a basking shark, which does not see humans as prey. </p> 
+    <h2>Quick Facts</h2>
+    <li>The basking shark is the second largest shark, and can grow up to 40 feet and weigh up to 5 tons</li>
+    <li>It's mouth is used as a filter, as it feeds off of zooplankton: its main source of food</li>
+    <li>While the basking shark isn't directly dangerous to humans, their large size and rough skin can pose a risk to the safety of individuals</li>
+    <h2>Sources</h2> 
+    <p>https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/basking-shark//</p>
+<!--Common footer-->
+
+<script>
+    async function loadHTML(id, file) {
+      const el = document.getElementById(id);
+      const resp = await fetch(file);
+      el.innerHTML = await resp.text();
+    }
+    loadHTML("header", "header.html");
+    loadHTML("footer", "footer.html");
+</script>
+        
+</body>
+</html>
