@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Information - Evan Price</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <style>
+
+  </style> 
+  <meta description ="A website about a 
+  very biased select few species of fish, 
+  with interesting information and facts 
+  about them">
+</head>  
+<body>
+  <!--Common header-->
+ <div id="header"></div>
+
+
+   
+  
+
+  
+
+  
+  
+
+  <!--Page content-->
+  <main>
+  
+    <h1>Contact Page</h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="dropdown">
+    <form action="https://formspree.io/f/mqayrkwb" METHOD="POST">
+
+     
+      <label for="first-name">First-Name</label>
+
+      <input type="text" id="first-name" name="first-name">
+      
+      <label for="last-name">Last-Name</label>
+      
+      <input type="text" id="last-name" name="last-name">
+
+      <label for="email">Email</label>
+
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone #</label>
+
+      <input type="number" id="phone" name="phone" required>
+
+      <label for="sendnotifs">Send Notifications For Changes & Updates?</label>
+
+      <input type="checkbox" id="sendnotifs" id="sendnotifs">
+
+     
+          
+      <fieldset>
+<legend>Preferred contact method</legend>
+ 
+<label>
+    <input type="radio" name="contact-method" value="email"  >
+    <span>Email</span>
+</label>
+ 
+<label>
+    <input type="radio" name="contact-method" value="text" >
+    <span>Text</span>
+</label>
+ 
+<label>
+    <input type="radio" name="contact-method" value="phone" >
+    <span>Phone</span>
+</label>
+</fieldset>
+
+
+
+
+
+      <label for="topic">Reason for contacting:</label>
+
+      <select name="topic" id="topic" required>
+        <option value="General Message">General Message</option>
+        <option value="Bug or Error">Bug or Error in the site</option>
+        <option value="Feedback or Criticism on the Site">Feedback/Criticism</option>
+        <option value="Favorite Page">Favorite Webpage</option>
+        </select>
+
+      <label for="message">Message:</label>
+
+      <textarea  id="message" name="message" rows=5 required></textarea>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <button type="submit">Enter</button>
+
+      </form>
+    </div>
+   
+
+   
+
+
+   
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Common footer-->
+<div id="footer"></div>
+
+<script>
+    async function loadHTML(id, file) {
+      const el = document.getElementById(id);
+      const resp = await fetch(file);
+      el.innerHTML = await resp.text();
+    }
+    loadHTML("header", "header.html");
+    loadHTML("footer", "footer.html");
+</script>
+        
+</body>
+</html>

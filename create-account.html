@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account - Evan Price</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="account.js" defer></script>
+  <style>
+
+  </style> 
+  <meta description ="A website about a 
+  very biased select few species of fish, 
+  with interesting information and facts 
+  about them">
+</head>  
+<body>
+
+
+
+   
+  
+
+  
+
+  
+  
+
+  <!--Page content-->
+  <main>  
+    <div class="createaccount">
+    <form action="https://formspree.io/f/mqayrkwb" METHOD="POST"></form>
+    <label for="username">Username:</label>
+
+      <input type="text" id="username" name="Username">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <button type="submit">Enter</button>
+   
+    </div>
+   
+
+
+   
+</main>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Common footer-->
+<div id="footer"></div>
+
+<script>
+    async function loadHTML(id, file) {
+      const el = document.getElementById(id);
+      const resp = await fetch(file);
+      el.innerHTML = await resp.text();
+    }
+    loadHTML("header", "header.html");
+    loadHTML("footer", "footer.html");
+</script>
+        
+</body>
+</html>
